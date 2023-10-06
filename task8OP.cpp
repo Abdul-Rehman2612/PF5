@@ -1,14 +1,16 @@
 #include <iostream>
 using namespace std;
-int odd_evenish(int number);
+string odd_evenish(int number);
 main()
 {	int number;
 	cout << "Enter a five-digit number: ";
 	cin >> number;
-	odd_evenish(number);
+	string result=odd_evenish(number);
+	cout << result;
 }
-int odd_evenish(int number)
+string odd_evenish(int number)
 {	
+	string result;
 	int a=number%10;
 	int b=number/10;
 	int c=b%10;
@@ -20,10 +22,10 @@ int odd_evenish(int number)
 	int sum=a+c+e+g+h;
 	if(sum%2!=0)
 	{
-	cout << "Oddish" ;
+	return result="Oddish" ;
 	}
 	if(sum%2==0)
 	{
-	cout << "Evenish" ;
+	return result="Evenish" ;
 	}
 }	

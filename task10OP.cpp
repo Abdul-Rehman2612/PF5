@@ -1,15 +1,54 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-string numbertowords(int number);
+void conversiontowords(int number);
 main()
 {	int number;
 	cout << "Enter a number (1-99): ";
 	cin >> number;
-	numbertowords(number);
+	conversiontowords(number);
 }
-string numbertowords(int number)
+void conversiontowords(int number)
 {	int number2=number;
+	if(number>=11 && number<=19)
+	{
+	if(number==11)
+	{
+	cout << "Eleven";
+	}
+	if(number==12)
+	{
+	cout << "Twelve";
+	}
+	if(number==13)
+	{
+	cout << "Thirteen";
+	}
+	if(number==14)
+	{
+	cout << "Fourteen";
+	}
+	if(number==15)
+	{
+	cout << "Fifteen";
+	}
+	if(number==16)
+	{
+	cout << "Sixteen";
+	}
+	if(number==17)
+	{
+	cout << "Seventeen";
+	}
+	if(number==18)
+	{
+	cout << "Eighteen";
+	}
+	if(number==19)
+	{
+	cout << "Nineteen";
+	}
+	}
 	if(number>=1 && number<=99 && !((number>=11 && number<=19)))
 	{
 	number=number-number%10;
@@ -88,44 +127,6 @@ string numbertowords(int number)
 	cout << "Ten";
 	}
 	}
-	if(number>=11 && number<=19)
-	{
-	if(number==11)
-	{
-	cout << "Eleven";
-	}
-	if(number==12)
-	{
-	cout << "Twelve";
-	}
-	if(number==13)
-	{
-	cout << "Thirteen";
-	}
-	if(number==14)
-	{
-	cout << "Fourteen";
-	}
-	if(number==15)
-	{
-	cout << "Fifteen";
-	}
-	if(number==16)
-	{
-	cout << "Sixteen";
-	}
-	if(number==17)
-	{
-	cout << "Seventeen";
-	}
-	if(number==18)
-	{
-	cout << "Eighteen";
-	}
-	if(number==19)
-	{
-	cout << "Nineteen";
-	}
-	}
+
 
 }	
